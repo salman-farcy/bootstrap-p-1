@@ -23,53 +23,86 @@
     />
   </head>
   <body>
-
-    <nav data-bs-theme="dark" class="navbar navbar-expand-lg bg-body-tertiary">
+    
+    <nav data-bs-theme="dark" class=" sticky-top navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Salman farcy</a>
-        <button class="navbar-toggler rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <a class="navbar-brand" href="#">
+          <img class=" w-75 " src="images/demo-logo.png" alt="">
+        </a>
+        <button data-bs-target="#offcanvasExample" data-bs-toggle="offcanvas" class="navbar-toggler rounded-0"   type="button"   aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
         </button>
-
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-          <form class="d-flex ms-lg-auto w-100 mt-4 mt-lg-0" role="search">
-            <input class="rounded-0 border border-danger  form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="rounded-0 btn btn-outline-danger" type="submit">Search</button>
-          </form>
-          <ul class="navbar-nav text-center me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Service</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu rounded-0">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
+        <div class="offcanvas offcanvas-end"  id="offcanvasExample" data-bs-theme="dark" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <a href="#">
+              <img class="img-fluid w-75" src="images/demo-logo.png" alt="">
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <form class="d-flex ms-lg-auto w-100 mt-4 mt-lg-0" role="search">
+              <input class="rounded-0 border border-danger  form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="rounded-0 btn btn-outline-danger" type="submit">Search</button>
+            </form>
+            <ul class=" navbar-nav text-center me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Service</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu rounded-0">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>  
+          </div>
         </div>
       </div>
-    </nav>      
+    </nav>  
+<!-- navbar end -->
 
-
-
+<!-- header section start -->
+    <header>
+      <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active " data-bs-interval="10000">
+            <img src="images/image-2.png" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item " data-bs-interval="2000">
+            <img src="images/image-3.png" class="d-block w-100 " alt="...">
+          </div>
+          <div class="carousel-item ">
+            <img  src="images/image-4.png" class="d-block w-100 " alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+<!-- header section end -->
 
 
 
